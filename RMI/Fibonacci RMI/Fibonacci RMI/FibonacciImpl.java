@@ -24,8 +24,20 @@ public class FibonacciImpl extends UnicastRemoteObject implements Fibonacci {
 	}
 
 	public static void main(String args[]){
+		try{
+			java.rmi.registry.LocateRegistry.createRegistry(1099);
+			System.out.print("RMI Registry is ready to party..");
+		}catch(Exception e){
+			System.out.println("Exception, RMI Registry is not ready to party.");
+			e.printStackTrace();
+		}
+		
 		try {
+
+
+
 			FibonacciImpl obj = new FibonacciImpl();
+			System.setProperty("java.rmi.server.hostname", "ec2-18-219-25-128.us-east-2.compute.amazonaws.com");
 			// Bind this object instance to the name "FibServer"
 			Naming.rebind("FibServer", obj);
 		} catch (Exception e){
