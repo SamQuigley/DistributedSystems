@@ -1,0 +1,8 @@
+module DateApp {
+    interface Date {
+        string getDate();
+    };
+};
+
+
+
