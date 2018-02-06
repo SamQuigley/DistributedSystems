@@ -1,0 +1,14 @@
+module College {
+	struct Student {
+		string name;
+		long age;
+		string email;
+		long id;
+	};
+	
+	interface StudentSearch {
+		Student search(in long id);
+		void searchByRef(out Student student);
+	};
+	
+};
