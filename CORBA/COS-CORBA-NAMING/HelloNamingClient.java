@@ -12,6 +12,7 @@ public class HelloNamingClient
 
     public static void list(NamingContext n, String indent) {
         try {
+                
                 final int batchSize = 1;
                 BindingListHolder bList = new BindingListHolder() ;
                 BindingIteratorHolder bIterator = new BindingIteratorHolder();
@@ -43,10 +44,13 @@ public class HelloNamingClient
     public static void main(String args[])
     {
 	try{
+            Properties props = new Properties();
+            props.put("org.omg.CORBA.ORBInitialPort", "49000");
+            ORB orb = ORB.init(args, props);
             NameComponent nc[]= new NameComponent[2];
 
-	    // create and initialize the ORB
-            ORB orb = ORB.init(args, null);
+	        // create and initialize the ORB
+            // ORB orb = ORB.init(args, null);
             org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
             rootCtx = NamingContextExtHelper.narrow(objRef);
 
@@ -70,6 +74,7 @@ public class HelloNamingClient
                 System.out.println("ERROR : " + e) ;
                 e.printStackTrace(System.out);
             }
+        
 	}
 }
 

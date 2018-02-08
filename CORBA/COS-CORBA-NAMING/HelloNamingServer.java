@@ -9,10 +9,14 @@ public class HelloNamingServer{
 
 	public static void main (String args[]) {
 		try{
+			Properties props = new Properties();
+			props.put("org.omg.CORBA.ORBInitialPort", "49000");
+			ORB orb = ORB.init(args, props);
+
 			NameComponent nc[] = new NameComponent[1];
 
 	    	// create and initialize the ORB
-	   		ORB orb = ORB.init(args, null);
+	   		// ORB orb = ORB.init(args, null);
 
 			HelloServant helloRef = new HelloServant();
 
@@ -83,6 +87,8 @@ public class HelloNamingServer{
 			System.err.println("Error: "+e);
 			e.printStackTrace(System.out);
 		}
+
+	
 
 	}
 }
