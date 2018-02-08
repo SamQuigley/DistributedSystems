@@ -50,18 +50,20 @@ public class HelloNamingClient
             org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
             rootCtx = NamingContextExtHelper.narrow(objRef);
 
-            // nc [0] = new NameComponent (" Hello " , " Context ") ;
-            // nc [1] = new NameComponent (" World " , " Object ") ;
+            list(rootCtx, "---->");
 
-            // // NameComponent path [] = { nc };
-            // org.omg.CORBA.Object objRefHello = rootCtx.resolve(nc);
-            // Hello helloRef = HelloHelper.narrow(objRefHello);
+            nc [0] = new NameComponent ("Hello2" , "Context") ;
+            nc [1] = new NameComponent ("Object2" , "Object") ;
 
-            // String hello = helloRef.sayHello();
-            // System.out.println(hello);
+            // NameComponent path [] = { nc };
+            org.omg.CORBA.Object objRefHello = rootCtx.resolve(nc);
+            Hello helloRef = HelloHelper.narrow(objRefHello);
+
+            String hello = helloRef.sayHello();
+            System.out.println(hello);
 
             // Call the list function to iterate through the Name Space
-            list(rootCtx, "---->");
+            
             System.out.println("Printing Done");
 
             } catch (Exception e) {
