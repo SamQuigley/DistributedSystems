@@ -11,8 +11,7 @@ public class HelloNamingServer{
 		try{
 			Properties props = new Properties();
 			props.put("org.omg.CORBA.ORBInitialPort", "1050");
-			ORB orb = ORB.init(args, props);
-
+			ORB orb = ORB.init(args, props)
 			NameComponent nc[] = new NameComponent[1];
 
 	    	// create and initialize the ORB
