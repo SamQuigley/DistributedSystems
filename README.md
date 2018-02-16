@@ -1,10 +1,10 @@
 # DistributedSystems
 
-
+# Topics
 ```
 CORBA
 RMI
 jmDNS
 ```
-jmDNS tutorial acknowledgement 
-http://cs.lmu.edu/~ray/notes/javanetexamples/
+#Acknowledgements
+* [jmDNS tutorial acknowledgement] http://cs.lmu.edu/~ray/notes/javanetexamples/
