@@ -7,4 +7,4 @@ RMI
 jmDNS
 ```
 # Acknowledgements
-* [jmDNS tutorial acknowledgement] (http://cs.lmu.edu/~ray/notes/javanetexamples/) 
+* [jmDNS Tutorial](http://cs.lmu.edu/~ray/notes/javanetexamples/) - 
