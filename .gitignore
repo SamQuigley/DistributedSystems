@@ -1,3 +1,5 @@
 /RMI/Fibonacci-RMI/*.pem
 /*.class
 /CORBA/jmDNS/jmDNS/target/
+/CORBA/jmDNS/Date/target/
+/CORBA/jmDNS/Capitalize/target/
