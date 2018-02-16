@@ -6,5 +6,5 @@ CORBA
 RMI
 jmDNS
 ```
-#Acknowledgements
+# Acknowledgements
 * [jmDNS tutorial acknowledgement] http://cs.lmu.edu/~ray/notes/javanetexamples/
