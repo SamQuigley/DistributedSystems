@@ -7,6 +7,8 @@ RMI
 jmDNS
 ```
 # Acknowledgements
-* [jmDNS Tutorial](http://cs.lmu.edu/~ray/notes/javanetexamples/) - Date & Captilize applications. 
+
+* [Java Networking using sockets](http://cs.lmu.edu/~ray/notes/javanetexamples/)
+ Date & Captilize applications. 
 
 
