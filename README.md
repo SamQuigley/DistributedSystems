@@ -4,6 +4,7 @@
 ```
 CORBA
 RMI
+Websockets
 jmDNS
 ```
 # Acknowledgements
