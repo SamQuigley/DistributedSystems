@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.samquigley.jmdns;
-
+package com.samquigley.date.jmdns;
 import java.io.IOException;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceEvent;
 import javax.jmdns.ServiceListener;
-
 /**
  *
  * @author samq2
  */
-public class ExampleServiceDiscovery {
-
+public class DateServiceDiscovery {
     private static class SampleListener implements ServiceListener{
         
         @Override
