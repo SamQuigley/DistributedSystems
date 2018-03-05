@@ -8,7 +8,8 @@ class StudentSearchServant extends _StudentSearchImplBase{
 	public Student search(int id){
 
 		return new Student("John", 10, "john@gmail.com", id);
-  }//end getDateMethod()
+  }
+  
   
   public void searchByRef(StudentHolder holder){
 	  
@@ -20,4 +21,4 @@ class StudentSearchServant extends _StudentSearchImplBase{
 	  
 	  holder.value = a;
   }
-}//end DateInterfaceservant class
+}

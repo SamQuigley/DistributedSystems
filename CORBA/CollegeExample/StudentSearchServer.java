@@ -18,19 +18,19 @@ public class StudentSearchServer   {
 
   public static void main(String args[]){
     try{
-      //Create and initialize the ORB
-      ORB orb = ORB.init(args, null);
+        //Create and initialize the ORB
+        ORB orb = ORB.init(args, null);
 
-      //Create servant and register it with the ORB
-      StudentSearchServant ssObjectReference = new StudentSearchServant();
-      orb.connect(ssObjectReference);
+        //Create servant and register it with the ORB
+        StudentSearchServant ssObjectReference = new StudentSearchServant();
+        orb.connect(ssObjectReference);
 
-      //Convert the object reference to a string and store
-      // it in a common file for access by the client.
-      orb.object_to_string(ssObjectReference);
-      // System.out.println(dateObjectReference +);
+        //Convert the object reference to a string and store
+        // it in a common file for access by the client.
+        orb.object_to_string(ssObjectReference);
+        // System.out.println(dateObjectReference +);
 
-     	ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("IOR")) ;
+     	  ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("IOR")) ;
 
         out.writeObject(orb.object_to_string(ssObjectReference)) ;
         out.close() ;

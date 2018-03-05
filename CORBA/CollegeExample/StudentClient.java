@@ -32,8 +32,8 @@ public class StudentClient{
       // true object reference.
        StudentSearch remoteObjRef = StudentSearchHelper.narrow(genericObjRef);
       
-	  StudentHolder holder = new StudentHolder();
-	  holder.value = new Student();
+      StudentHolder holder = new StudentHolder();
+      holder.value = new Student();
 	  
       remoteObjRef.searchByRef(holder);
       System.out.println(holder.value);

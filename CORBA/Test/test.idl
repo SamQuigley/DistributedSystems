@@ -1,0 +1,10 @@
+module TestApp
+{
+
+	interface test
+	{
+		string sayHello(in string message);
+	};
+
+
+};

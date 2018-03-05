@@ -28,7 +28,7 @@ public final class Student implements org.omg.CORBA.portable.IDLEntity
   } // ctor
   
   public String toString(){
-	  return "Name: " + name;
+	  return "Name: " + name + "\nAge: "+age;
   }
 
 } // class Student

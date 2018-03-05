@@ -1,0 +1,14 @@
+module BookShop {
+	struct Book {
+		long id;
+		string title;
+		string author;
+		string release;
+	};
+	
+	interface BookSearch {
+		Book search(in long id);
+		void searchByRef(out Book book);
+	};
+	
+};
